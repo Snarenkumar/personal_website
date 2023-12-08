@@ -63,6 +63,10 @@ ul {
     background-color: transparent;
     overflow: hidden;
 }
+.n3 {
+    position: relative;
+    top: 0.938rem;
+}
 
 li a {
     display: inline-block;
@@ -79,7 +83,22 @@ li a {
     animation: navani .3s ease forwards;
     animation-delay: calc(.15s * var(--navAni));
 }
-
+.n1 {
+    display: flex;
+    flex-direction: column;
+    
+}
+.border {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px solid var(--primary-color);
+    animation: leftSideAni 1s ease forwards;
+    
+ 
+    
+}
 li a.active,
 li a:hover {
     color: var(--primary-color);
@@ -172,11 +191,18 @@ li a:hover {
 }
 .secondsocail {
     display: flex;
-    flex-direction: row;
-    position: relative;
-    left: 1029px;
-}
+   
+   
+    
+    height: 250px;
+    width: 400px;
 
+    
+}
+.border:hover{
+    border: 15px solid #f9532d;
+    
+}
 .images-n1 {
     width: 100%;
     margin-right: 0;
@@ -212,6 +238,16 @@ li a:hover {
     animation: leftSideAni 1s ease forwards;
     animation-delay: 1s;
 }
+.social2 {
+    display: flex;
+    flex-direction: row;
+    
+    margin-bottom: 100px;
+    margin-top: 150px;
+    position:static;
+    
+}
+
 
 /* .detail2{
     position: relative;
@@ -311,6 +347,7 @@ h1 {
     flex-direction: row;
     justify-content: space-evenly;
 }
+ 
 
 .school h2 {
     font-size: 2rem;
@@ -404,6 +441,7 @@ a {
 .container3 {
     padding: 0;
     margin-top: 250px;
+    
 
 
 }
