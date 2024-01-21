@@ -99,6 +99,17 @@ li a {
  
     
 }
+.socail-outer {
+    display: flex;
+    flex-direction: row;
+
+}
+.socail-outer h1{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
 li a.active,
 li a:hover {
     color: var(--primary-color);
