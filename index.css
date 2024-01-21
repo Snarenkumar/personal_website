@@ -101,20 +101,21 @@ li a {
 }
 .socail-outer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
 }
-.socail-outer h1{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+.heading-socail {
+    padding-left: 36px;
 }
 
 li a.active,
 li a:hover {
     color: var(--primary-color);
 }
-
+.socail-lists {
+    display: flex;
+    flex-direction: row;
+}
 #click {
     display: none;
 }
@@ -241,7 +242,15 @@ li a:hover {
     opacity: 0;
     animation: topSideAni 1s ease forwards;
 }
+.resume-inside h1 {
+    font-size: 3.35rem;
+  font-weight: 600;
+  opacity: 0;
+  animation: leftSideAni 1s ease forwards;
+    animation-delay: 0s;
+  animation-delay: 1s;
 
+}
 .detail2 h1 {
     font-size: 3.35rem;
     font-weight: 600;
@@ -257,6 +266,17 @@ li a:hover {
     margin-top: 150px;
     position:static;
     
+}
+.resume{
+    margin-top: 250px;
+}
+.resume {
+    margin-top: 15px;
+    font-size: 3.35rem;
+    font-weight: 600;
+    opacity: 0;
+    animation: leftSideAni 1s ease forwards;
+    animation-delay: 1s;
 }
 
 
@@ -738,7 +758,7 @@ a {
         font-size: 1rem;
     }
 
-    .main h1 {
+    .main heading-socail {
         font-size: 2.5rem;
     }
 
