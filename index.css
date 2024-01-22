@@ -63,6 +63,7 @@ ul {
     background-color: transparent;
     overflow: hidden;
 }
+
 .n3 {
     position: relative;
     top: 0.938rem;
@@ -83,11 +84,13 @@ li a {
     animation: navani .3s ease forwards;
     animation-delay: calc(.15s * var(--navAni));
 }
+
 .n1 {
     display: flex;
     flex-direction: column;
-    
+
 }
+
 .border {
     margin-top: 50px;
     display: flex;
@@ -95,15 +98,17 @@ li a {
     align-items: center;
     border-radius: 15px solid var(--primary-color);
     animation: leftSideAni 1s ease forwards;
-    
- 
-    
+
+
+
 }
+
 .socail-outer {
     display: flex;
     flex-direction: column;
 
 }
+
 .heading-socail {
     padding-left: 36px;
 }
@@ -112,10 +117,12 @@ li a.active,
 li a:hover {
     color: var(--primary-color);
 }
+
 .socail-lists {
     display: flex;
     flex-direction: row;
 }
+
 #click {
     display: none;
 }
@@ -153,22 +160,25 @@ li a:hover {
 
 .skills {
     display: flex;
-    
+
     flex-direction: row;
     gap: 1.6rem;
 }
-.head{
+
+.head {
     margin: 50px 50px 50px 50px;
 }
+
 .points {
     display: flex;
-    row-gap:2rem ;
+    row-gap: 2rem;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
 }
-.head p{
+
+.head p {
     row-gap: 30px;
     padding: 5px;
     font-size: 1.05rem;
@@ -182,7 +192,7 @@ li a:hover {
 
 }
 
-.points li{
+.points li {
     padding: 5px;
     font-size: 1.05rem;
     font-weight: 900;
@@ -193,28 +203,33 @@ li a:hover {
     opacity: 0;
     animation: navani .3s ease forwards;
     animation-delay: calc(.15s * var(--navAni));
-    
+
 }
+
 .row1 {
-    margin:30px 50px 30px  50px;
+    margin: 30px 50px 30px 50px;
 }
+
 .row2 {
-    margin:30px 50px  30px 50px ;
+    margin: 30px 50px 30px 50px;
 }
+
 .secondsocail {
     display: flex;
-   
-   
-    
+
+
+
     height: 250px;
     width: 400px;
 
-    
+
 }
-.border:hover{
+
+.border:hover {
     border: 15px solid #f9532d;
-    
+
 }
+
 .images-n1 {
     width: 100%;
     margin-right: 0;
@@ -242,15 +257,18 @@ li a:hover {
     opacity: 0;
     animation: topSideAni 1s ease forwards;
 }
+
 .resume-inside h1 {
     font-size: 3.35rem;
-  font-weight: 600;
-  opacity: 0;
-  animation: leftSideAni 1s ease forwards;
+    font-weight: 600;
+    opacity: 0;
+    animation: leftSideAni 1s ease forwards;
     animation-delay: 0s;
-  animation-delay: 1s;
+    animation-delay: 1s;
+    
 
 }
+
 .detail2 h1 {
     font-size: 3.35rem;
     font-weight: 600;
@@ -258,25 +276,54 @@ li a:hover {
     animation: leftSideAni 1s ease forwards;
     animation-delay: 1s;
 }
+
 .social2 {
     display: flex;
     flex-direction: row;
-    
+
     margin-bottom: 100px;
     margin-top: 150px;
-    position:static;
+    position: static;
+
+}
+.resume_left {
+    height: 900px;
+    width: 600px;
     
+    text-align: center;
 }
-.resume{
-    margin-top: 250px;
+.resume-inside h4 {
+    border: 15px solid #f9532d;
+    margin-top: 100px;
 }
+.resume_right {
+    margin-left: 100px;
+}
+.resume_pdf {
+    background-image: url(/imgs/resume.png);
+    background-size: cover;
+    width:800px ;
+    height: 900px;
+    filter: blur(3px);
+
+}
+.resume-inside {
+    margin-top: 200px;
+}
+
 .resume {
-    margin-top: 15px;
+
+
+    padding: 0;
+    margin-top: 250px;
+
     font-size: 3.35rem;
     font-weight: 600;
     opacity: 0;
     animation: leftSideAni 1s ease forwards;
     animation-delay: 1s;
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -305,8 +352,9 @@ li a:hover {
     opacity: 0;
     animation: topSideAni 1.5s ease forwards;
 }
+
 .content p {
-    
+
     line-height: 1.7;
     font-size: 1.15rem;
     opacity: 0;
@@ -350,9 +398,9 @@ h1 {
 }
 
 .images img {
-    
+
     position: relative;
-    
+
 }
 
 .images::before {
@@ -378,7 +426,7 @@ h1 {
     flex-direction: row;
     justify-content: space-evenly;
 }
- 
+
 
 .school h2 {
     font-size: 2rem;
@@ -387,7 +435,8 @@ h1 {
     animation: leftSideAni 1s ease forwards;
     animation-delay: 1s;
 }
-.content h2{
+
+.content h2 {
     font-size: 2rem;
     font-weight: 600;
     opacity: 0;
@@ -472,7 +521,7 @@ a {
 .container3 {
     padding: 0;
     margin-top: 250px;
-    
+
 
 
 }
@@ -698,7 +747,8 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
-.images-n2{
+
+.images-n2 {
     position: absolute;
     right: 149px;
     top: 150px;
