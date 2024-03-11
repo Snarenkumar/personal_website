@@ -298,6 +298,8 @@ li a:hover {
 }
 .resume_right {
     margin-left: 100px;
+    /* box-shadow: 10px 10px 5px black inset; */
+    box-shadow: 100px 100px 100px 100px black inset;
 }
 .resume_pdf {
     background-image: url(/imgs/resume.png);
@@ -305,6 +307,8 @@ li a:hover {
     width:800px ;
     height: 900px;
     filter: blur(3px);
+    
+     
 
 }
 .resume-inside {
@@ -360,19 +364,96 @@ li a:hover {
     opacity: 0;
     animation: topSideAni 1.5s ease forwards;
 }
-
+.project_title {
+    text-align: center;
+    text-decoration:underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 10px;
+}
 
 .detail2 P,
 h1 {
     margin: 0;
     padding: 0;
 }
+.projects {
+    padding: 0;
+    margin-top: 250px;
 
+    font-size: 3.35rem;
+    font-weight: 600;
+    opacity: 0;
+    animation: leftSideAni 1s ease forwards;
+    animation-delay: 1s;
+    
+    
+}
 .social {
     display: flex;
     flex-wrap: wrap;
     gap: 1.4rem;
     margin-top: 1.7rem;
+}
+.project_row1{
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.project_textinside{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.project_row2{
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.project_img{
+    background-image: url(/imgs/Untitled_design-removebg-preview.png);
+    background-size: cover;
+    height: 387px;
+    width: 500px;
+}
+.project_textinside:hover h6{
+    color: #f9532d;    
+
+}
+.project_img2{
+    background-image: url(/imgs/p2_nobg.png);
+    background-size: cover;
+    height: 387px;
+    width: 500px;
+}
+.project_img1{
+    background-image: url(/imgs/p4_nobg.png);
+    background-size: cover;
+    height: 387px;
+    width: 500px;
+}
+.project_img2{
+    background-image: url(/imgs/p2_nobg.png);
+    background-size: cover;
+    height: 387px;
+    width: 500px;
+}
+.project_img3{
+    background-image: url(/imgs/p3_nobg.png);
+    background-size: cover;
+    height: 387px;
+    width: 500px;
+}
+.project_img4{
+    background-image: url(/imgs/fina_nobg.png);
+    background-size: cover;
+    height: 387px;
+    width: 500px;
+}
+.project_1{
+    
+    height: 500px;
+    width: 500px;
 }
 
 .social a {
