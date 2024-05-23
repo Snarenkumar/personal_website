@@ -16,7 +16,15 @@ body {
     font-family: 'Outfit', sans-serif;
 
 }
-
+.contact_clm1{
+    width: 50%;
+    height: 200px;
+    background-color: aqua;
+}
+.contact_main {
+    display: flex;
+    flex-direction: row;
+}
 /* Genral */
 .container {
     padding: 0 8.4rem;
@@ -387,6 +395,20 @@ h1 {
     animation-delay: 1s;
     
     
+}
+.gallery {
+    padding: 0;
+    margin-top: 250px;
+
+    font-size: 3.35rem;
+    font-weight: 600;
+    opacity: 0;
+    animation: leftSideAni 1s ease forwards;
+    animation-delay: 1s;
+}
+.carocel_row1 {
+    height: 500px;
+    width: 250px;
 }
 .social {
     display: flex;
