@@ -252,7 +252,7 @@ li a:hover {
     /* Occupy full width on smaller screens */
 }
 
-/* -------------------- */
+/* ! -------------------- */
 .main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(277px, 1fr));
