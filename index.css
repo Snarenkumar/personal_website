@@ -829,6 +829,9 @@ a {
     margin-right: auto;
     text-align: center;
 }
+.left {
+    background-color: white;
+}
 
 .images-n1 {
     width: 100%;
