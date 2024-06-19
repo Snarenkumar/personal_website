@@ -1020,6 +1020,12 @@ inserted from chatgpt */
     animation-delay: 1s;
 }
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .project_row1, .project_row2  {
+      width: 100%;
+    }
+  }
 .project_row1, .project_row2 {
     display: flex;
     flex-direction: row;
