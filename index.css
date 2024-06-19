@@ -718,7 +718,7 @@ a {
   .images-n1 img {
     margin: 0;
   }
-  /* 
+  
   ul {
     background: #fff;
     width: 100%;
@@ -730,7 +730,7 @@ a {
     top: 3.4rem;
     left: -100%;
     z-index: 111111;
-  } */
+  }
 
   .menu {
     display: block;
@@ -1076,5 +1076,6 @@ inserted from chatgpt */
   .heading-socail {
     padding-left: 0px;
   }
+  
   
 }
