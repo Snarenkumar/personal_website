@@ -718,7 +718,7 @@ a {
   .images-n1 img {
     margin: 0;
   }
-/* 
+  /* 
   ul {
     background: #fff;
     width: 100%;
@@ -1043,24 +1043,38 @@ inserted from chatgpt */
   }
   .project_img {
     background-image: url(/imgs/Untitled_design-removebg-preview.png);
-  background-size: cover;
-  height: 387px;
-  width: 385;
-
+    background-size: cover;
+    height: 387px;
+    width: 385;
   }
   .project_textinside {
-    
-    padding-left:50px ;
-  } 
-  .project_textinside h6{
-    text-align:start ;
+    padding-left: 50px;
+  }
+  .project_textinside h6 {
+    text-align: start;
     font-size: 40px;
- }
-.skills {
+  }
+  .skills {
     display: flex;
-  
-    flex-direction:column-reverse;
-    gap: 1.6rem;
-  } 
 
+    flex-direction: column-reverse;
+    gap: 1.6rem;
+  }
+
+  .social2 {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 0px;
+    margin-top: 81px;
+    position: static;
+  }
+  .heading-socail h2 {
+    font-size: 35px;
+
+  } 
+  .heading-socail {
+    padding-left: 0px;
+  }
+  
 }
