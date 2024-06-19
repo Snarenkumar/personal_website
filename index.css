@@ -718,7 +718,7 @@ a {
   .images-n1 img {
     margin: 0;
   }
-
+/* 
   ul {
     background: #fff;
     width: 100%;
@@ -730,7 +730,7 @@ a {
     top: 3.4rem;
     left: -100%;
     z-index: 111111;
-  }
+  } */
 
   .menu {
     display: block;
@@ -1055,5 +1055,12 @@ inserted from chatgpt */
   .project_textinside h6{
     text-align:start ;
     font-size: 40px;
+ }
+.skills {
+    display: flex;
+  
+    flex-direction:column-reverse;
+    gap: 1.6rem;
+  } 
 
-}}
+}
