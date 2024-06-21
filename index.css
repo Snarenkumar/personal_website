@@ -1120,4 +1120,12 @@ inserted from chatgpt */
   .images-n1 img{
     width: 362px;
   }
+  .resume-text{
+    /* margin-left: 5px; */
+  }
+  .resume-text h1 {
+    font-size: 4rem;
+
+  }
+  
 }
