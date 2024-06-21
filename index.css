@@ -1128,5 +1128,12 @@ inserted from chatgpt */
     font-size: 4rem;
 
   }
+  .resume-inside h1{
+    font-size:2.35rem;
+  }
+  .resume-inside {
+    margin-top: 112px;
+    margin-left: 18px;
+  }
   
 }
