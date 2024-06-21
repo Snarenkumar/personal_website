@@ -61,7 +61,7 @@ header {
   text-decoration: none;
 }
 
-ul {
+.navbar_1 ul {
   display: flex;
   gap: 0.6rem;
   list-style-type: none;
@@ -718,7 +718,7 @@ a {
   .images-n1 img {
     margin: 0;
   }
-  
+
   ul {
     background: #fff;
     width: 100%;
@@ -1070,52 +1070,54 @@ inserted from chatgpt */
     position: static;
   }
   .heading-socail h2 {
-    font-size:30px;
-
-  } 
+    font-size: 30px;
+  }
   .heading-socail {
     padding-left: 0px;
   }
-  .points li a {
-    
+  .points ul {
+  }
+  .points li {
     padding: 0.3rem 1rem;
-    
-    
+
     font-size: 1.05rem;
     font-weight: 600;
     letter-spacing: 0.7px;
     border-radius: 36px;
-    
+
     transition: 0.3s;
     opacity: 0;
     animation: navani 0.3s ease forwards;
     animation-delay: calc(0.15s * var(--navAni));
   }
-  
-.resume {
-  padding: 0;
-  margin-top: 250px;
-  font-size: 3.35rem;
-  font-weight: 600;
-  opacity: 0;
-  animation: leftSideAni 1s ease forwards;
-  animation-delay: 1s;
-  display: flex;
-  flex-direction: column;
-}
 
-.resume-inside h1 {
-  font-size: 3.35rem;
-  font-weight: 600;
-  opacity: 0;
-  animation: leftSideAni 1s ease forwards;
-  animation-delay: 0s;
-  animation-delay: 1s;
-}
-.resume_left {
-  height: 900px;
-  width: 600px;
+  .resume {
+    padding: 0;
+    margin-top: 250px;
+    font-size: 3.35rem;
+    font-weight: 600;
+    opacity: 0;
+    animation: leftSideAni 1s ease forwards;
+    animation-delay: 1s;
+    display: flex;
+    flex-direction: column;
+  }
 
-  text-align:start;
-}
+  .resume-inside h1 {
+    font-size: 3.35rem;
+    font-weight: 600;
+    opacity: 0;
+    animation: leftSideAni 1s ease forwards;
+    animation-delay: 0s;
+    animation-delay: 1s;
+  }
+  .resume_left {
+    height: 900px;
+    width: 600px;
+
+    text-align: start;
+  }
+  .images-n1 img{
+    width: 362px;
+  }
 }
