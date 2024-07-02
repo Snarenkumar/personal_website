@@ -1016,13 +1016,8 @@ inserted from chatgpt */
     background-size: cover;
     height: 387px;
     width: 385px;
-  /* }
-  .project_img1 {
-    background-image: url(/imgs/p4_nobg.png);
-    background-size: cover;
-    height: 387px;
-    width: 385px;
-  } */
+   }
+  
   .project_img2 {
     background-image: url(/imgs/p2_nobg.png);
     background-size: cover;
@@ -1047,6 +1042,18 @@ inserted from chatgpt */
     height: 387px;
     width: 385;
   }
+  .project_img1 {
+    background-image: url(/imgs/qpoint2_nobg.png);
+  background-size: cover;
+    height: 387px;
+    width: 385;
+  }
+  }
+  .project_img2 {
+    
+    height: 387px;
+    width: 385;
+  }
   .project_textinside {
     padding-left: 50px;
   }
@@ -1054,12 +1061,7 @@ inserted from chatgpt */
     text-align: start;
     font-size: 40px;
   }
-  .skills {
-    display: flex;
-
-    flex-direction: column-reverse;
-    gap: 1.6rem;
-  }
+  
 
   .social2 {
     display: flex;
@@ -1098,7 +1100,7 @@ inserted from chatgpt */
     animation: leftSideAni 1s ease forwards;
     animation-delay: 1s;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .resume-inside h1 {
@@ -1135,6 +1137,5 @@ inserted from chatgpt */
   }.resume-inside h4{
     font-size: 50px;
   }
-  
-}
-}
+
+
