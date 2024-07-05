@@ -1049,7 +1049,7 @@ inserted from chatgpt */
     height: 387px;
     width: 385;
   }
-  }
+  
   .project_img2 {
     
     height: 387px;
@@ -1101,7 +1101,7 @@ inserted from chatgpt */
     animation: leftSideAni 1s ease forwards;
     animation-delay: 1s;
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
   }
 
   .resume-inside h1 {
@@ -1138,5 +1138,11 @@ inserted from chatgpt */
   }.resume-inside h4{
     font-size: 50px;
   }
+  .skills {
+    display: flex;
+    flex-direction:column;
+    gap: 1.6rem;
+  }
 
 
+}
