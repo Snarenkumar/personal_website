@@ -820,10 +820,7 @@ a {
   .container {
     padding: 0 1.6rem;
   }
-}
-
-/* Media Queries */
-@media screen and (max-width: 768px) {
+  
   .images-n1 img {
     margin: 0;
   }
@@ -841,6 +838,7 @@ a {
     font-size: 2.5rem;
   }
 }
+
 
 @media screen and (max-width: 600px) {
   /* Adjust styles for screens up to 600px width */
