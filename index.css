@@ -840,12 +840,14 @@ a {
 }
 
 
+
+
 @media screen and (max-width: 600px) {
   /* *{
     background-color: red;
     color: yellow;
   } */
-  /* Adjust styles for screens up to 600px width */
+  
   .images-n1 img {
     margin: 0;
   }
@@ -882,9 +884,6 @@ a {
   .detail2 p {
     display: block;
   }
-}
-
-@media screen and (max-width: 600px) {
   .images-n1 img {
     margin: 0;
   }
