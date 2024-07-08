@@ -801,7 +801,7 @@ a {
   
   padding: 0;
   margin-top: 250px;
-
+  /* margin-bottom: 50px; */
   font-size: 3.35rem;
   font-weight: 600;
   opacity: 0;
@@ -1148,6 +1148,7 @@ inserted from chatgpt */
 }
 
 /*! done with others just left with the contact section  */
-.contact_heading {
+.contact_heading h1{
+  margin-bottom: 58px;
 
 }
