@@ -1,5 +1,5 @@
 // console.log("this is a pesonal website ")
-alert("best view in laptop view or desktop view, website is under changes but to be updated soon !!")
+// alert("best view in laptop view or desktop view, website is under changes but to be updated soon !!")
 const darkModeToggle = document.getElementById('darkModeToggle');
 const body = document.body;
 const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
