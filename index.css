@@ -798,8 +798,7 @@ a {
 }
 
 .contact_main {
-  display: flex;
-  flex-direction: row;
+  
   padding: 0;
   margin-top: 250px;
 
@@ -1149,3 +1148,6 @@ inserted from chatgpt */
 }
 
 /*! done with others just left with the contact section  */
+.contact_heading {
+
+}
