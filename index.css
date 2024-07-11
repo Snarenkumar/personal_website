@@ -1152,3 +1152,20 @@ inserted from chatgpt */
   margin-bottom: 58px;
 
 }
+.innerbox_contactpage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 60%;
+  background-color: black;
+}
+.outerbox_contactpage {
+  width: 900%;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+  height: 900px;
+  background-color: white;
+}
