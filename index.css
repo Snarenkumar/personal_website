@@ -1152,10 +1152,9 @@ inserted from chatgpt */
 
 }
 .innerbox_contactpage {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 50%;
+  right: 19%;
   width: 60%;
   height: 60%;
   background-color: black;
