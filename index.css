@@ -971,12 +971,12 @@ inserted from chatgpt */
   padding-top: 0px;
 }
 
-.project_img1 {
+/* .project_img1 {
   background-image: url(/imgs/p4_nobg.png);
   background-size: cover;
   height: 387px;
   width: 500px;
-}
+} */
 
 .project_img2 {
   background-image: url(/imgs/p2_nobg.png);
