@@ -1113,7 +1113,7 @@ inserted from chatgpt */
     animation-delay: 1s;
   }
   .resume_left {
-    height: 900px;
+    height: 587px;
     width: 600px;
 
     text-align: start;
@@ -1150,6 +1150,15 @@ inserted from chatgpt */
   .resume_left_border{
     width: 386px;
 
+  }
+  .resume_pdf{
+    width: 411px;
+  height: 541px;
+  }
+  .resume_right {
+    margin-left: 13px;
+    margin-right:10px ;
+    box-shadow: 100px 100px 100px 100px black inset;
   }
 
 
