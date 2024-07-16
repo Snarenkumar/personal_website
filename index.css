@@ -1156,8 +1156,8 @@ inserted from chatgpt */
   height: 629px;
   }
   .resume_right {
-    margin-left: 2px;
-    margin-right:2px ;
+    margin-left: 0px;
+    margin-right:0px ;
     box-shadow: 100px 100px 100px 100px black inset;
   }
 
