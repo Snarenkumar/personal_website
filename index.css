@@ -1160,6 +1160,10 @@ inserted from chatgpt */
     margin-right:0px ;
     box-shadow: 100px 100px 100px 100px black inset;
   }
+  .project_title h1{
+    font-size: 4rem;
+    
+  }
 
 
 }
