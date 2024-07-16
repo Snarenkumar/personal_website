@@ -1143,6 +1143,13 @@ inserted from chatgpt */
     flex-direction:column;
     gap: 1.6rem;
   }
+  .resume-inside h4{
+    font-size: 38px;
+  }
+  .resume_left_border{
+    width: 386px;
+
+  }
 
 
 }
