@@ -1041,19 +1041,19 @@ inserted from chatgpt */
     background-image: url(/imgs/Untitled_design-removebg-preview.png);
     background-size: cover;
     height: 387px;
-    width: 385;
+    width: 385px;
   }
   .project_img1 {
     background-image: url(/imgs/qpoint2_nobg.png);
   background-size: cover;
     height: 387px;
-    width: 385;
+    width: 385px;
   }
   
   .project_img2 {
     
     height: 387px;
-    width: 385;
+    width: 385px;
   }
   .project_textinside {
     padding-left: 50px;
@@ -1161,7 +1161,7 @@ inserted from chatgpt */
     box-shadow: 100px 100px 100px 100px black inset;
   }
   .project_title h1{
-    font-size: 4rem;
+    font-size: 3.7rem;
     
   }
 
