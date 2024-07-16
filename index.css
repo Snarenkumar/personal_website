@@ -1152,11 +1152,11 @@ inserted from chatgpt */
 
   }
   .resume_pdf{
-    width: 411px;
-  height: 541px;
+    width: 431px;
+  height: 629px;
   }
   .resume_right {
-    margin-left: 13px;
+    margin-left: 9px;
     margin-right:10px ;
     box-shadow: 100px 100px 100px 100px black inset;
   }
