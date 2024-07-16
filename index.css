@@ -1122,7 +1122,7 @@ inserted from chatgpt */
     width: 362px;
   }
   .resume-text{
-    margin-left: 40px;
+    margin-left: 67px;
     
   }
   .resume-text h1 {
@@ -1131,6 +1131,7 @@ inserted from chatgpt */
   }
   .resume-inside h1{
     font-size:2.35rem;
+    margin-left: 16px;
   }
   .resume-inside {
     margin-top: 112px;
