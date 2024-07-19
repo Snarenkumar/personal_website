@@ -1226,13 +1226,13 @@ inserted from chatgpt */
 }
 .contact_right{
   background-color: yellow;
-  width: 300px;
-  height: 100%;
+  width: 456px;
+  height: 496px;
   
 }
 
 .contact_left{
-  width: 300px;
-  height: 100%;
+  width:656px;
+  height: 496px;
   background-color: white;
 }
