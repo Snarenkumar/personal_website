@@ -1218,18 +1218,19 @@ inserted from chatgpt */
   flex-direction: row;
   justify-content:space-evenly;
   height: 100%;
-  background-color:rgb(119, 119, 207);
+ 
   margin-top: 31px;
+}
+
+.contact_left{
+  width:656px;
+  height: 496px;
+  background-color:rgb(119, 119, 207);
+  
 }
 .contact_right{
   background-color:white;
   width: 456px;
   height: 496px;
   
-}
-
-.contact_left{
-  width:656px;
-  height: 496px;
-  background-color: white;
 }
