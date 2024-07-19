@@ -1189,16 +1189,18 @@ inserted from chatgpt */
 .innerbox_contactpage {
   position: absolute;
   top: 24%;
-  right: 13%;
-  width: 1143px;
-  height: 500px;
-  background-color: black;
+  right: 8%;
+  width: 1168px;
+  height: 626px;
+  background-color: transparent;
+  border: 5px solid white;
 }
 .outerbox_contactpage {
-  width: 900%;
+  width: 97%;
   margin-left: 20px;
   margin-right: 20px;
+  border: 5px solid white;
   
   height: 900px;
-  background-color: white;
+  background-color: transparent;
 }
