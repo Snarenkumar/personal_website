@@ -1207,5 +1207,12 @@ inserted from chatgpt */
   height: 12px;
   width: 88px;
   margin-right: 69px;
-  background-color: red;
+  background-color:var(--primary-color);
+  border-radius: 11px;
+}
+.innerbox_contactpage:hover{
+  border:10px solid var(--primary-color) ;
+  .outerbox_contactpage{
+    border: 10px solid var(--primary-color);
+  }
 }
