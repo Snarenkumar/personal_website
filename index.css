@@ -1224,6 +1224,7 @@ inserted from chatgpt */
 
 .contact_left{
   width:656px;
+  /* width:452px; */
   height: 496px;
   background-color:rgb(119, 119, 207);
   display: flex;
@@ -1267,4 +1268,10 @@ inserted from chatgpt */
   border-radius: 15px;
   border: 5px solid #1f252e;
   
+}
+.contact_right_img{
+  background-image: url(/vecteezy_man-customer-service-with-contact-information_7920397.jpg);
+  background-size: cover;
+  height: 447px;
+  width:469px;
 }
