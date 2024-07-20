@@ -1229,6 +1229,7 @@ inserted from chatgpt */
   display: flex;
   flex-direction: column;
   
+  
 }
 .contact_right{
   background-color:white;
@@ -1248,4 +1249,22 @@ inserted from chatgpt */
   
   letter-spacing:10px;
 
+}
+.name input{
+  padding: 15px 15px 15px 15px;
+  border-radius: 15px;
+  border: 5px solid #1f252e;
+  
+}
+.message input{
+  padding: 40px 40px 40px 40px;
+  border-radius: 15px;
+  border: 5px solid #1f252e;
+  
+}
+.email input{
+  padding: 15px 15px 15px 15px;
+  border-radius: 15px;
+  border: 5px solid #1f252e;
+  
 }
