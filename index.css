@@ -1226,6 +1226,8 @@ inserted from chatgpt */
   width:656px;
   height: 496px;
   background-color:rgb(119, 119, 207);
+  display: flex;
+  flex-direction: column;
   
 }
 .contact_right{
@@ -1239,6 +1241,11 @@ inserted from chatgpt */
   height: 100px;
   background-color:blueviolet;
   text-align: center;
-  
+
     
+}
+.main_contact_heading h1{
+  
+  letter-spacing:10px;
+
 }
