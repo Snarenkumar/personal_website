@@ -1267,21 +1267,40 @@ inserted from chatgpt */
   background-repeat: no-repeat; /* Ensure the icon does not repeat */
   background-color: white; /* Background color of the input field */
 }
+.email {
+  display: flex;
+  align-items: center;
+}
 
-
-
-.message input{
-  padding: 40px 40px 40px 40px;
+.email input {
+  padding: 15px 15px 15px 45px; /* Add extra padding to the left to make space for the icon */
   border-radius: 15px;
   border: 5px solid #1f252e;
-  
+  background-image: url('user.png'); /* Path to your icon image */
+  background-position: 15px center; /* Position the icon at the center of the left side */
+  background-size: 24px 24px; /* Size of the icon */
+  background-repeat: no-repeat; /* Ensure the icon does not repeat */
+  background-color: white; /* Background color of the input field */
 }
-.email input{
-  padding: 15px 15px 15px 15px;
+.message {
+  display: flex;
+  align-items: center;
+}
+
+.message input {
+  padding: 15px 15px 15px 45px; /* Add extra padding to the left to make space for the icon */
   border-radius: 15px;
   border: 5px solid #1f252e;
-  
+  background-image: url('user.png'); /* Path to your icon image */
+  background-position: 15px center; /* Position the icon at the center of the left side */
+  background-size: 24px 24px; /* Size of the icon */
+  background-repeat: no-repeat; /* Ensure the icon does not repeat */
+  background-color: white; /* Background color of the input field */
 }
+
+
+
+
 .contact_right_img{
   background-image: url(/vecteezy_man-customer-service-with-contact-information_7920397.jpg);
   background-size: cover;
