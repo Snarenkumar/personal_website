@@ -1229,6 +1229,8 @@ inserted from chatgpt */
   background-color:rgb(119, 119, 207);
   display: flex;
   flex-direction: column;
+justify-content: space-evenly;
+
   
   
 }
@@ -1237,6 +1239,9 @@ inserted from chatgpt */
   width: 456px;
   height: 496px;
   
+}
+.contact_padding{
+  padding-left: 50px;
 }
 .main_contact_heading{
   width: 100%;
@@ -1255,10 +1260,11 @@ inserted from chatgpt */
 .name {
   display: flex;
   align-items: center;
+  
 }
 
 .name input {
-  padding: 15px 15px 15px 45px; /* Add extra padding to the left to make space for the icon */
+  padding:20px 240px 20px 45px; /* Add extra padding to the left to make space for the icon */
   border-radius: 15px;
   border: 5px solid #1f252e;
   background-image: url('user.png'); /* Path to your icon image */
@@ -1273,7 +1279,7 @@ inserted from chatgpt */
 }
 
 .email input {
-  padding: 15px 15px 15px 45px; /* Add extra padding to the left to make space for the icon */
+  padding: 20px 240px 20px 45px; /* Add extra padding to the left to make space for the icon */
   border-radius: 15px;
   border: 5px solid #1f252e;
   background-image: url('email.png'); /* Path to your icon image */
