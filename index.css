@@ -1165,7 +1165,7 @@ inserted from chatgpt */
 
   /* starting with the last page that is conatct page with reposiveness */
   .outerbox_contactpage {
-    width: 89%;
+    width: 500px;
     display: flex;
     flex-direction: column;
   }
@@ -1174,7 +1174,7 @@ inserted from chatgpt */
 
     top: 24%;
     right: 8%;
-    width: 1168px;
+    width: 700px;
     height: 626px;
     background-color: white;
     border: 5px solid var(--primary-color);
@@ -1183,7 +1183,7 @@ inserted from chatgpt */
   .contact_main_content {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     justify-content: space-evenly;
     height: 100%;
 
