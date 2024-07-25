@@ -1326,9 +1326,9 @@ inserted from chatgpt */
   font-size: 16px;
   border-radius: 15px;
   border: 5px solid #1f252e;
-  background-image: url("message.png"); /* Path to your icon image */
-  background-position: 14px 25px; /* Position the icon at the center of the left side */
-  background-size: 24px 24px; /* Size of the icon */
+  background-image: url("message.png"); /*! Path to your icon image */
+  background-position: 14px 25px; /*! Position the icon at the center of the left side */
+  background-size: 24px 24px; /*! Size of the icon */
   background-repeat: no-repeat; /*! Ensure the icon does not repeat */
   background-color: white; /*! Background color of the input field */
 }
