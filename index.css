@@ -1322,7 +1322,7 @@ inserted from chatgpt */
   padding-top: 22px;
   padding-bottom: 116px;
   padding-left: 60px;
-  /*  ! 221px 112px 59px; */ /* Add extra padding to the left to make space for the icon */
+  /*  ! @221px 112px 59px; */ /* Add extra padding to the left to make space for the icon */
   font-size: 16px;
   border-radius: 15px;
   border: 5px solid #1f252e;
