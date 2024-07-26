@@ -1308,7 +1308,7 @@ inserted from chatgpt */
   background-position: 15px center; /* Position the icon at the center of the left side */
   background-size: 24px 24px; /* Size of the icon */
   background-repeat: no-repeat; /* Ensure the icon does not repeat */
-  background-color: white; /*@ Background color of the input field */
+  background-color: white; /* Background color of the input field */
 }
 .message {
   display: flex;
