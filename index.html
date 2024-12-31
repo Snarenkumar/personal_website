@@ -46,34 +46,38 @@
       <div class="main">
         <div class="detail">
           <h3>Hi, It's Me</h3>
-          <h1>I'm <span style="color: #f9532d">Naren kumar</span></h1>
-          <p>I am first year student at MVJCE from CSE branch</p>
+          <h1>I'm <span style="color: #f9532d">Naren Kumar</span></h1>
+          <p>I am a first-year student at MVJCE from the CSE branch</p>
           <div class="social">
-            <a
-              href="https://www.linkedin.com/in/s-naren-kumar-1b2471280/"
-              style="--socialAni: 1"
-              ><i class="bx bxl-linkedin"></i
-            ></a>
-            <a
-              href="https://www.instagram.com/naren_kumar_s/"
-              style="--socialAni: 2"
-              ><i class="bx bxl-instagram"></i
-            ></a>
-            <a href="https://github.com/Snarenkumar" style="--socialAni: 3"
-              ><i class="bx bxl-github"></i
-            ></a>
-            <a href="#" style="--socialAni: 4"
-              ><i class="bx bxl-facebook-circle"></i
-            ></a>
+            <a href="https://www.linkedin.com/in/s-naren-kumar-1b2471280/" style="--socialAni: 1">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/naren_kumar_s/" style="--socialAni: 2">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="https://github.com/Snarenkumar" style="--socialAni: 3">
+              <i class="bx bxl-github"></i>
+            </a>
+            <a href="#" style="--socialAni: 4">
+              <i class="bx bxl-facebook-circle"></i>
+            </a>
           </div>
         </div>
+        <!-- Scratch Card Integration -->
         <div class="img-sec">
-          <div class="images imges2">
-            <img src="/imgs/profile1.png" alt="" class="img-w" />
+          <div id="scratch-card" class="scratch-card-container">
+            <img src="./imgs/profile1.png" alt="Hidden Image" />
+            <canvas></canvas>
           </div>
         </div>
       </div>
     </section>
+
+
+
+   
+
+
     <section class="container container2">
       <div class="aboutme">
         <div class="img-sec">
@@ -411,5 +415,100 @@
     </section>
 
     <script src="index.js"></script>
+
+
+    <script>
+      const scratchCard = document.getElementById('scratch-card');
+      const canvas = scratchCard.querySelector('canvas');
+      const ctx = canvas.getContext('2d');
+    
+      canvas.width = scratchCard.offsetWidth;
+      canvas.height = scratchCard.offsetHeight;
+    
+      // Fill the canvas with a gradient similar to Google Pay scratch color
+      const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+      gradient.addColorStop(0, '#F5EFE7'); // Soft Pink
+gradient.addColorStop(1, '#3E5879'); // Peach
+// Dark Orange
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+      // Draw the text
+      ctx.fillStyle = '#fff';
+      ctx.font = '28px Arial';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('Scratch Here!', canvas.width / 2, canvas.height / 2);
+    
+      let isDrawing = false;
+      let isMouseDown = false;
+    
+      function getMousePos(e) {
+        const rect = canvas.getBoundingClientRect();
+        return {
+          x: (e.clientX - rect.left) / (rect.right - rect.left) * canvas.width,
+          y: (e.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height,
+        };
+      }
+    
+      function getTouchPos(e) {
+        const rect = canvas.getBoundingClientRect();
+        const touch = e.touches[0];
+        return {
+          x: (touch.clientX - rect.left) / (rect.right - rect.left) * canvas.width,
+          y: (touch.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height,
+        };
+      }
+    
+      canvas.addEventListener('mousedown', function (e) {
+        isDrawing = true;
+        isMouseDown = true;
+        const pos = getMousePos(e);
+        scratch(pos.x, pos.y);
+      });
+    
+      canvas.addEventListener('mousemove', function (e) {
+        if (isDrawing && isMouseDown) {
+          const pos = getMousePos(e);
+          scratch(pos.x, pos.y);
+        }
+      });
+    
+      canvas.addEventListener('mouseup', function () {
+        isDrawing = false;
+        isMouseDown = false;
+      });
+    
+      canvas.addEventListener('mouseleave', function () {
+        isDrawing = false;
+      });
+    
+      canvas.addEventListener('touchstart', function (e) {
+        e.preventDefault();
+        isDrawing = true;
+        const pos = getTouchPos(e);
+        scratch(pos.x, pos.y);
+      });
+    
+      canvas.addEventListener('touchmove', function (e) {
+        e.preventDefault();
+        if (isDrawing) {
+          const pos = getTouchPos(e);
+          scratch(pos.x, pos.y);
+        }
+      });
+    
+      canvas.addEventListener('touchend', function (e) {
+        e.preventDefault();
+        isDrawing = false;
+      });
+    
+      function scratch(x, y) {
+        ctx.globalCompositeOperation = 'destination-out';
+        ctx.beginPath();
+        ctx.arc(x, y, 40, 0, 2 * Math.PI);
+        ctx.fill();
+      }
+    </script>
   </body>
 </html>
