@@ -31,7 +31,7 @@ body {
   margin-top: 1.875rem;
 }
 
-/* Nav starts */
+/* Nav */
 header {
   position: relative;
   box-shadow: 0 4px 17px rgba(0, 0, 0, 0.1);
@@ -128,7 +128,6 @@ li a:hover {
 
 .menu {
   display: none;
-  
 }
 
 /* Nav End */
@@ -1327,7 +1326,7 @@ inserted from chatgpt */
   font-size: 16px;
   border-radius: 15px;
   border: 5px solid #1f252e;
-  background-image: url("message.png");/*  !Path to your icon image */
+  background-image: url("message.png"); /*  !Path to your icon image */
   background-position: 14px 25px; /* ! Position the icon at the center of the left side */
   background-size: 24px 24px; /*! @Size of the icon! */
   background-repeat: no-repeat; /*!!! Ensure the icon does not repeat */
@@ -1350,4 +1349,85 @@ inserted from chatgpt */
   margin-top: 0px;
   margin-left: 50px;
   margin-bottom: 6px;
+}
+
+/* scratch card one  */
+
+.scratch-section {
+  animation: topSideAni 1.5s ease forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+#scratch-card {
+  animation: topSideAni 1.5s ease forwards;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  aspect-ratio: square;
+  border: 2px solid #ecf0f1;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: #ecf0f1;
+  overflow: hidden;
+  border-radius: 15px;
+  left: 120px;
+  top: 17px;
+}
+
+#scratch-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#scratch-card canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .scratch-section {
+    animation: topSideAni 1.5s ease forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+
+  #scratch-card {
+    animation: topSideAni 1.5s ease forwards;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    aspect-ratio: square;
+    border: 2px solid #ecf0f1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: #ecf0f1;
+    overflow: hidden;
+    border-radius: 15px;
+    left: 19px;
+    top: 0px;
+  }
+  
+
+  #scratch-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #scratch-card canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
