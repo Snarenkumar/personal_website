@@ -1,1434 +1,514 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap");
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-html,
-body {
-  width: 100%;
-  overflow-x: hidden;
-}
+    <link rel="stylesheet" href="index.css" />
+    <title>Portfolio</title>
+  </head>
 
-:root {
-  --primary-color: #f9532d;
-  --primary-dark: #1f252e;
-}
+  <body>
+    <header class="container">
+      <div class="page-header">
+        <div class="logo">
+          <a href="#"></a>
+        </div>
+        <input type="checkbox" id="click" />
 
-* {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
+        <label for="click" class="mainicon">
+          <div class="menu">
+            <i class="bx bx-menu"></i>
+          </div>
+        </label>
+        <ul class="navbar_1">
+          <li><a href="#" class="active" style="--navAni: 1">Home</a></li>
+          <li><a href="#" style="--navAni: 2">About</a></li>
+          <li><a href="#" style="--navAni: 3">Skills</a></li>
+          <li><a href="#" style="--navAni: 5">Resume</a></li>
+          <li><a href="#" style="--navAni: 4">Projects</a></li>
+          <li><a href="#" style="--navAni: 5">Gallary</a></li>
+          <li><a href="#" style="--navAni: 5">Contact</a></li>
+        </ul>
+        <label class="mode">
+          <input type="checkbox" id="darkModeToggle" />
+          <i class="bx bxs-moon"></i>
+        </label>
+      </div>
+    </header>
 
-body {
-  font-family: "Outfit", sans-serif;
-}
+    <section class="container">
+      <div class="main">
+        <div class="detail">
+          <h3>Hi, It's Me</h3>
+          <h1>I'm <span style="color: #f9532d">Naren Kumar</span></h1>
+          <p>I am a first-year student at MVJCE from the CSE branch</p>
+          <div class="social">
+            <a href="https://www.linkedin.com/in/s-naren-kumar-1b2471280/" style="--socialAni: 1">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/naren_kumar_s/" style="--socialAni: 2">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="https://github.com/Snarenkumar" style="--socialAni: 3">
+              <i class="bx bxl-github"></i>
+            </a>
+            <a href="#" style="--socialAni: 4">
+              <i class="bx bxl-facebook-circle"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Scratch Card Integration -->
+        <div class="img-sec">
+          <div id="scratch-card" class="scratch-card-container">
+            <img src="./imgs/profile1.png" alt="Hidden Image" />
+            <canvas></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.container {
-  padding: 0 8.4rem;
-}
 
-.img-w {
-  width: 31.063rem;
-  margin-top: 1.875rem;
-}
 
-/* Nav */
-header {
-  position: relative;
-  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.1);
-  background: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
+   
 
-.page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-}
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 800;
-  opacity: 0;
-  animation: leftSideAni 1s ease forwards;
-}
+    <section class="container container2">
+      <div class="aboutme">
+        <div class="img-sec">
+          <div class="images-n1">
+            <img
+              src="/imgs/n2.jpg"
+              alt="error while loading"
+              height="800px "
+              width="550px"
+            />
+          </div>
+        </div>
 
-.logo a {
-  color: #244d61;
-  text-decoration: none;
-}
+        <div class="detail2">
+          <h1>About <span style="color: #f9532d">Me</span></h1>
+          <p class="main">
+            Hello there! 👋 I'm Naren Kumar, a first-year Computer Science
+            student at MVJ College oF Engineering,where I'm diving into the
+            exciting world of coding and technology.
+          </p>
 
-ul {
-  display: flex;
-  gap: 0.6rem;
-  list-style-type: none;
-  background-color: transparent;
-  overflow: hidden;
-}
+          <h1>A Coder's<span style="color: #f9532d">World 🚀</span></h1>
+          Most of my time is spent immersed in the world of coding. I love the
+          challenge of problem-solving and the endless possibilities that
+          technology brings. Whether it's exploring new languages, diving into
+          algorithms, or crafting web applications, I'm always up for the next
+          coding adventure. A Cricket Enthusiast 🏏 Beyond the screen, you'll
+          find me with a cricket bat in hand. Cricket isn't just a sport for me;
+          it's a passion. From cheering for my favorite team to playing on the
+          field, the thrill of the game fuels my spirit.
 
-.n3 {
-  position: relative;
-  top: 0.938rem;
-}
+          <h1>
+            My <span style="color: #f9532d">Education Qualification 📚</span>
+          </h1>
 
-li a {
-  display: inline-block;
-  padding: 0.3rem 1rem;
-  color: var(--nav-text);
-  text-decoration: none;
-  font-size: 1.05rem;
-  font-weight: 600;
-  letter-spacing: 0.7px;
-  border-radius: 36px;
-  line-height: 2;
-  transition: 0.3s;
-  opacity: 0;
-  animation: navani 0.3s ease forwards;
-  animation-delay: calc(0.15s * var(--navAni));
-}
+          <div class="school">
+            <div class="primary">
+              <h2 style="color: #f9532d">10th Grade 🎓</h2>
+              <div class="linkes">
+                <a href="https://www.vvi.edu.in/">
+                  <h3>Vagdevi Vilas Institution</h3>
+                </a>
+              </div>
+            </div>
+            <div class="secondary">
+              <h2 style="color: #f9532d">12th Grade 🎓</h2>
+              <div class="linkes">
+                <a href="https://www.vvi.edu.in/">
+                  <h3>Vagdevi Vilas Institution</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="collage">
+            <h2>
+              <span style="color: #f9532d">Current Degree Pursuit 🚀</span>
+            </h2>
 
-.n1 {
-  display: flex;
-  flex-direction: column;
-}
+            <div class="linkes">
+              <a href="https://mvjce.edu.in/">
+                <h3>Bachelor of Engineering (BE) in Computer Science</h3>
+                <h3>MVJ College of Engineering, Whitefield</h3>
+                <h3>First Year 🎓</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.border {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px solid var(--primary-color);
-  animation: leftSideAni 1s ease forwards;
-}
+    <section class="container container3">
+      <div class="skills">
+        <div class="content detail2">
+          <div class="head">
+            <h1>My <span style="color: #f9532d">Skills🚀</span></h1>
 
-.socail-outer {
-  display: flex;
-  flex-direction: column;
-}
+            <p>
+              I possess a diverse set of skills in web development, programming
+              languages, and more. <br />
+              Here are some of my key competencies:
+            </p>
+          </div>
 
-.heading-socail {
-  padding-left: 36px;
-}
+          <h1><span style="color: #f9532d">Front-end Development</span></h1>
+          <div class="points">
+            <ul>
+              <div class="row1">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (ES6+)</li>
+              </div>
 
-li a.active,
-li a:hover {
-  color: var(--primary-color);
-}
+              <div class="row2">
+                <li>React.js</li>
+                <li>Bootstrap</li>
+                <li>Tailwind CSS</li>
+              </div>
+            </ul>
+          </div>
+          <h1><span style="color: #f9532d">Back-end Development</span></h1>
 
-.socail-lists {
-  display: flex;
-  flex-direction: row;
-}
+          <div class="points">
+            <ul>
+              <div class="row1">
+                <li>Node.js</li>
+                <li>Express.js(basics)</li>
+                <li>Django</li>
+              </div>
+              <div class="row2">
+                <li>Flask</li>
+                <li>MySQL</li>
+                <li>SQLite</li>
+              </div>
+            </ul>
+          </div>
+          <h1>Programming<span style="color: #f9532d"> Languages</span></h1>
 
-#click {
-  display: none;
-}
+          <div class="points">
+            <ul>
+              <ul>
+                <div class="row1">
+                  <li>Python</li>
+                  <li>C++</li>
+                </div>
 
-.menu {
-  display: none;
-}
+                <div class="row2">
+                  <li>C</li>
+                  <li>JavaScript</li>
+                </div>
+              </ul>
+            </ul>
+          </div>
+          <h1>Other<span style="color: #f9532d"> Skills</span></h1>
 
-/* Nav End */
+          <div class="points">
+            <ul>
+              <li>Responsive Web Design</li>
+              <li>Version Control (Git)</li>
+              <li>RESTful API Design</li>
+              <li>Soft Skills</li>
+            </ul>
+          </div>
+        </div>
+        <div class="side">
+          <div class="n3">
+            <img
+              src="/imgs/skills.jpg"
+              alt="error while loading"
+              height="600px "
+              width="550px"
+              class="n3"
+            />
+          </div>
+          <div class="border">
+            <div class="social2">
+              <div class="socail-outer">
+                <div class="heading-socail">
+                  <h2>
+                    ✨ My Social
+                    <span style="color: #f9532d"> Media Hub</span> ✨
+                  </h2>
+                </div>
+                <div class="socail-lists">
+                  <div class="row1">
+                    <div class="insta">
+                      <a
+                        href="https://www.instagram.com/naren_kumar_s/"
+                        style="--socialAni: 2"
+                        ><img
+                          height="100px"
+                          width="100px"
+                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABW1JREFUSEutV11sFFUU/s7d7szSlkSIRhRQYxQBd3alxRfIQv15o6RmZjdqDKgk+OBb0WhCFKmEaKJEXkx8EFFMJGR3BsPfiyaNSIKxtNDdITRGHoxig5JgsLS7s9t7zHR3dmemQwuJ87K7c+893/n5znfPEiIfAoHBs9YIcN82PqLPBt/eaivdjo3590Q4NM8hd/n/e2aB3Rq9DjznAcJNfeV9iog/UgPHZlLdOOQWw2+gDWLakdVfO6xL43PbrEM2Hz/+RG71kriMfQRgEwOL6htd0OgkhVauAzhZ49pbndal8bqrwXJEWinryU1EdASMDtCMyZvMfB6g6bnqQoACQhcAtbFvAsDzqlk6FU7srIhlb3e7ozqXGVhCjIMUE5/FsWKY8vk5QT2HuKenrbz47wyRGCAgA8KfSkV5lI4PT4YDD2ShrGsDIN4FiCOqWXwhkgINC1Et5+jJLRCClELxkGMkBxnUA6IBtVDa7W/FQDu54ZcN7Q8AS6tVXtJ5zL56J5R3jOQWBg65kRDjVbA8L4W4QMAV1Swt87MpkOoGocYBHlNNe1UU6GQuvbSNuY+lXAciJqKzVekc7bDGxp1caitL/momS4RtSqF0sGJo/wLoVJT4PXR45JpnMwDs6KkuJh5m5jMLLDsTVi5H115jwscAFoYYfoPA/Yppf+Ho2isQoKqUdod1cahiaJcBPAxJmnq0aPvJ3QzMyaYyzHwahJNqodTrj7isJ98gIhf0Bhj7ITACSXGAUyDuB6iTmfoTVnG//1zF0IoANCF4XTxvn42MuKxrzxLhOxCOJgol3Yu4aqTXSMghIlyrkehuz49e8ZNuKrf6ASFjI/VMUJdqFi96AGVDu0CMtIiJTDw/eqYJ7BeNJjDYVE072zysa+8T4V0GdiTM0ieB2jcMVLLa22B8CNA7qlnc6+2pGJrr0BpBtCFeKP5YT7V7Cflcn8ymnokxf+9GrBZKeutw6jjAvczcm7Dsk/X3QZ2tZJM6JJmgoNMVQxsG0CUEepR86QdPxQLtNJVN9gimQYBOqGZxswdQNpLfEtDHLPoS1uix6IiTOphMAKZqlrJeZGUjOUTAWsny6Xbr4mBL6X1WmsDExxIFu4+9NBraLgADzPxmwrL3RbVZJZvaCea9YOxMWKUPvMgqevIcCN2CsTFulU4HydUAmAGWNAgSJ1RzdLOXzam+5HLRRmPMPMmx2BMLGuTyjEzpqx4U1HYejLYaao/N3E6Np2JoFwCkhfCTy6txY1NVf3y9JHEm3E6uX5Vc6nWW/CmACRD2A3yOQQpJToOoH0A7EW1XCsXP/dWvGJrL8NUEflIx7XORrHaM9BqGHHEFJGHZmXBKHUPbzsA+MBaGbscbxLxDsewD4TNNAQGnVdN2e7pJzSZBJ/XUshjx7wD9pprFh6Iu88lcaqmQ8jkC1gOYZuCnaa5Z/vR6lvk9CKekubeSOs20vN0quvfATEcEJJNzuZgjx/5xtbXGtftnGQuF00qpP7mt746RXMugIbc8ilh5l8jnXUdnA7uvKrp2AMTbGPRNwiy9NLtjo0YlX/58Q2jZSJ4mUAaMg6plb2uNTRFzDL/YfbfjVH4BaBGAU8S0J54q/ky7IcOiETWq8can2sqL/8oQYnuI5HqAriuKsoIODzdvJi+Yhr3WTOToqZcZ/KUvs3c++jSGMGLeqlj218EqhWrsX6zq2gZJ2AHAVTBRX7vtYU+CcEJI7POLRst+SKsb+u2fYDGxOXlvTMGq+cbVlkuEaYcvdR63r871p8PH6sbflojCtWaruQf0usRGMzzc39FDsr/L/aruMdY/It/al6ZQBHwJCIjfnXkMhT2f+3dwiPfv/Q/GKGpFRV3jagAAAABJRU5ErkJggg=="
+                      /></a>
+                    </div>
+                    <div class="git">
+                      <a
+                        href="https://www.instagram.com/naren_kumar_s/"
+                        style="--socialAni: 2"
+                        ><img
+                          height="100px"
+                          width="100px"
+                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABRFJREFUSEuNVt9vFFUU/s6ddmbbJgSDCNRUkaCxy+5SBH9A/AOIKJTdbkwk4o8g8oSGRB9MNDaamIjRGBOiEBWjD8btLIgJic8+UEViu7tljQlawJYEMcaktbuzu/eY+bl3dmcK92EyM/fec8495/u+cwmRgwBw9NRN/8bvVWfI+Yhb600S2AuD4Lx765fdpgbYtZDgOnYWeUa9DWpA/hp+E6JRyjzE4A0MrINgItA1IeVsj5acpEKhFZ+QsPflT+xZWcoO303oeY0IOQZW2SYixj8MNsH0TqJY/t2fjzisc9IYG+42zid1i7XXwXgVgB44s1NEbqYiDDTB/K6uyXEqXLTiMq6kOnyGxezwuh7q+Q7AVjeKaC9eiFGRnG82tNGBM1Pz3dmxy6oMPy1Lo1vWC615DsDa+JotG4m7jTDfks0d/cXq5U47imPXLT+Vvs2q848MutebvOSYYGwIwozw6fxyHnQZ4DqA+zxnVV3o26lw4V8vGLfGIW4BqOXSJwF+xi8ik9iZMKe/t3KZB0B8lIBNzKhKcFUQNeF88zAzLgnwEb04c76R3/yolPIHv0IATiTMysEAVQG4PO9WLvMwgyeDgjIgpXZP3+mpWee0IcLHC8VCPrm2V2rXlPQyhEwZhZmLrh3/xN5HPZv+CoR9obpLOaKfmpmOr3V39er5ZBJSzKiIZNCnCbN0IKBZIA75vGbJX2+AsdKnigCu9wotRYWpv3y0tFXMpVKUsMp9G1c06n1VMA+yLUz2IoF5Y6J8p8pv593KpbYx6LwaPzMfThQrH8VxMS4LdkD1bPogE3+iMp0lJxOnKlUX8N6znk2NAnRKNSYFbegrlP5o/+uQPUVuVeDY6xd3bxns6W3OhYOj3YZZsrWh7djKZQ4w8wlfEOwUtbg5OFCsqiCJYL1vJpx0fmJrv6Vbi84Gn37Mhw0vgwGPrVzqBQYdD0fImw2zUuo6cScHOwptTy/uSQ1pPXRFdczEryTMynshra6PpbJgMn0nDh4Iz+sT5c+7ahnPpKDL1cbSe8A4rWoNgZ7VzdIX4RqPpoYh6GLICeOsUSzvWtZPBMLs9bWxdBGMve1pu3h4UDcrP7stWBm1XPoGAauCX47C8H69WPkyljs+OhViWWOZ/czsnEwZC7q4f6Xfs8OOs+mPifAigAaAaTC2eQL8WYvEG/0Tpbku5nqKZvP7v9GR9UI0x5lof0S7PGmY5ef8QEJaXctvSpKjOE67eEkj8YtktilmZ0ECuACi942J0tcqlmt7MzuJ+G0Atp5TZJcWyBiFcjlwrObCIf5Y+gNmvOwYZtrOgteA8Y17EWCQ5EBC26o3stqSres+bdqdyrVO4A91s+LYDDv2hds+Vn57nyUXJhnIkAOuyi7Oj6yuy+bTgqhmTJSOhdjj6/xYeg6MwQ462tyY0sXADiqcWwo57mo6AJbyybs01n5ixhoiHOqdKB93bzpKhB3crefStsKtD11ViOdbDTzSf6ZyVdkdwDGCEMCSDRStdRbAMIAFAL8xMJQwy3dEbajn0lfAGFJ4Umk18djAt+Wr/i1WBWboBtLZeeTjW/stozHO4CNk9xfgb8Ms3x7j2JZW+6rUAPNRfcXCW3RythatAR08Dpe+ndmlPakhoeEQCBsNs/KkChA/4/Vsyubtny1NO9ZfmJ67Ge8j6BaZ+RAao8DVFfTyZiKuxXH6qAhFVPPv2haBw87eEo7tloX51hbGBfQ/o9ogQgVi7z4AAAAASUVORK5CYII="
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="row2">
+                    <div class="whatsup">
+                      <a
+                        href="https://www.instagram.com/naren_kumar_s/"
+                        style="--socialAni: 2"
+                        ><img
+                          height="100px"
+                          width="100px"
+                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABGdJREFUSEuVV0toHVUY/r5z70weaC2I4gMjpos2TUayEYpSaAXxgc8kdVFECkVUqogEtIhCwFURu5KK4KOLgo/exAdSRdBk4cLiQpobTSISSqkVwUeL5iZzM3N+mblz75yZOXNNZzVz5j//d/73d4jOQxACSRcAAtaFeN0iX9hbUGCgmcLd3hMddlXmaplgdj36Sh7TAlOoHLHcnpwFFsEWsPFjbd/OAYga7OoIi6IoRCwLDfRKX+2nc3m/dCxeHdtxfZXVX6MACiIPXOYTo1v3SCDBjVfMLP7WyiFmD9mYGNlTEc5GGRUDlykqrGcX4q+cjKbs7astzHUCmyRonL0psHlqU0Pybmq2HM523gi4v7Yw166aVlgS569NjOxRmrMddyUAObc3AH5D6LMAQi0cJTEK4Kq49NiqwJbH0zdN7O2r1VOLTdti4NjVVovXBTzcs+G/y8+W/1l/eGQbHPb3nKwvREHxx4cfE/AogWvS3SZwztVmOa1NDJcBn2eo73cc94Kvg9cIPARga6J2FZAvtYSTvar/YlP89wHemz+7Vl2AGxPDSXJltvlQuE00biLwAYAr239zsVwn+aTD8PMNrRYFuNbUUkguu6vTrBbyhVA2TlRRXQajPsljEBwEcLWlcDZE0YPIIDVOmbmiVRLjdj8qJFdSTkmWNNzAv67p9nwEjXuoeMitzR/z93mvQuNlWywBfO969V3NuvcLgFvaMlmLMz2CyMeYwNe+5n5Hye9RXYqSu3trC1/54yOPAJwpbS+aHihHQNzXDkeU1f21epdyMrJawHcAdYQIf44qg8Qb7nT9WX/C+xSCB8uqXVHuEKgxEZnclMVpcnXS5nggwUtVVi+0SlI2RMloAPnL0ZXTAAYArAI4D2B7ehA1QoRPCPBcuwN2yeps54pwFDDnTNfv9Me9fwn0J4qXw0DuEnHCajV4ipSzjrdwvDnvTQF4BZSGq4a2+HpplsDuUovT5EpibHYuYM113YGg2ZzSwKGORYK/CRx2bq2/zSnoaL055h0Q4j0CR93p+qQ/7jUA6Wv3sC6dywoMiLyICr+AxrwB3J4CK4D8IFAXATlI4JzbdIcC139cg2+a8h1XG+O9878wJFqZ/ADBqA+fKGml7eVFqnC/DpwGlT4DoNfaQGzAhV4tCN1KuDXQ6lGhCkKGcxVRz4vgaQA9IvIHFU8TPOVw+1tNLO2Elo8Bbst3t+x0ys3jPLCIfNs78+NuOXBz7/qlLbdXKtzhhP6H/GTpz85ISxDWx71nCLwOwC3UtwCRq9OxmCMZJnBSUGcEuERgl6GwKcB3EVcg0QPgBrT6cuLawmyMp2PXGNvHYllku/CczTCQWK1JBArz2Bzn2V5lEgQLT4mJQFvGTn0SfatjQwnZK+d5Nj5l9UnW4ynZ61wGcpnQoreVwfis5uiyTAS7lRZB6pW+k13obe6+ktVQ4PUWon8Zt41NUef/v7aUDkjjR3JTsTWQwvaSq0eLlZZdYMrMzsr/B3IGW0VMOmBJAAAAAElFTkSuQmCC"
+                      /></a>
+                    </div>
+                    <div class="linkedin">
+                      <a
+                        href="https://www.instagram.com/naren_kumar_s/"
+                        style="--socialAni: 2"
+                        ><img
+                          height="100px"
+                          width="100px"
+                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA8RJREFUSEudV8+LFEcU/l7v2tO7xEOEXAJBVLyYnjkkoDkYiYInD4HZ3ktAEDwYXAQPygZCUDyImENyCK5/gOhhptscAiKJKMktoKw7vXrIrif1aIQsuz2r1gvdU939arp7ptc5zbx6Vd/7vvejagjZh0BgMAHg3Fr6TfrU8S85JN4G1Nk80merkcQkxSffrtnrta3FVeJdYSoIsdl2TyiyPrIY9+xg6dF7qaLBCpiJgUDDC5ue+xczHUzA4lwTH2/44Y0xWS/VbdQeQ+p+u3kKhOsaMd33tOH39hXroIpSvRAN4KjtXiDQxRgkITugvdbww+0D4BKwkfjV1WFI/cZrfakU/zkEfKvhh9/U41HDK83xsGvUdr8lsr4D+GMAt21LnaTO8prhV6fMx3SEIbUcJvkUMbUcj1mznWTqqoSS/V0+1gYePPvpjjdqcu9b5hfTwdLzauGHBsjGbGuXpfiZ3MDM15wgnIttkeeeI6Yf5br9buLDvsWHQOoCAZ+Jtf9AuGuTOkWd5VdiMiexG1JL4LSqmXHNCXpzsWc0UwRmprNE/LPo+6wfdG+s2A3sp5u9f4enZPZ7fba1a+IdP5PhmIyb54hhMAYjArHDSOXTIef9CBB93+guXZYTsMg4AWakB8XAU0E4F5+TST2YaIIZFMCrzPSSCIeSBdPnUcMPP880jkemjGKk1BU5jhnTBA7and7D+KwNz/3KYvodwKSQVtnrG9N0Z6U/sNUsrpxxUWpi/GIH4RnZfn3P/Q2MY0aRWmqv01leMYF1vySMq3Isi8vIH880umEgQTa95k/MOJsMXJ0QsqwDdufx3xmwbPccOC8Qhs5xAqwZi/oB46gT9P6Q5/S95g9gXMqCYUBZfHiqGz5IbaK4CFHb3U2EVRkpgxccPzyd9PFM6zyBr0p2itWRqWD5vpx6fc+dB+PKMPB0N3yQvqrEJWECp5uGgQG+mkYbH8IaeIjxPBSuZJfNaMZA1G5mjHNgLEz5vdPxjRi1W+ergKUKfa+ZAad2RTg83e1pxkZVa8bAqoyUSUutgUdKrWmXA1fmWDPWwOkIZCphLKp6kOMn95Onse7RyHPnSeYYgCINLC67TKVcavH+SItLSi2mUgosb62EcQmwUVxGNbbd3ShUNRYcv7f1qtbFlee4TGp9KasTO53+2gdfGLcIT75w/MV/Ytv61+4ntA175LrzdnKRfn38WjKWfql2A7/F16UDRB4oZ3jBLherniRjHiLG7TT+WWNoIf5k1dspvYpvrpHPVZN7nWeTrCGZjv8B028lR3WJel8AAAAASUVORK5CYII="
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="resume container">
+      <div class="resume_left">
+        <div class="resume-text">
+          <h1><span style="color: #f9532d"> Resume 📄</span></h1>
+        </div>
+        <div class="resume-inside">
+          <h1>To be <span style="color: #f9532d"> updated soon!!</span></h1>
+          <div class="resume_left_border">
+            <h4>Click on the resume to download ⬇️</h4>
+          </div>
+        </div>
+      </div>
+      <div class="resume_right">
+        <a href="imgs/resume.png" download="resume">
+          <div class="resume_pdf"></div>
+        </a>
+      </div>
+    </section>
 
-.mode i {
-  font-size: 1.4rem;
-  cursor: pointer;
-  color: var(--primary-color);
-  opacity: 0;
-  animation: rightSideAni 1.5s ease forwards;
-}
-/* !!took reference from others content */
+    <section class ="projects">
+      <div class = "project_title">
+        <h1>💻Project<span style="color: #f9532d"> section here </span></h1>
+      </div>
+      <div class="project_row1">
+        <div class="project_1">
+          <div class="project_img1"></div>
+          <div class="project_textinside">
+            <h6 class="h1_project_1">QPoint System</h6>
+            <h6>Company's website</h6>
 
-.container2 {
-  padding: 0;
-  margin-top: 274px;
-}
+            <!-- ! !note : have to modify the poster of the webpage-->
+          </div>
+        </div>
+        <div class="project_1">
+          <div class="project_img2"></div>
+          <div class="project_textinside">
+            <h6>Sportify main page</h6>
+             <!-- !!@ note : complete the web design useing html css -->
+          </div>
+        </div>
+        <div class="project_1">
+          <div class="project_img"></div>
+          <div class="project_textinside">
+            <h6>Sportify Login page</h6>
 
-.aboutme {
-  display: flex;
-  flex-direction: row;
-  gap: 1.6rem;
-}
+           <!-- !!  note :mention it is  full stack project -->
+          </div>
+        </div>
+      </div>
+      <div class="project_row2">
+        <div class="project_1">
+          <div class="project_img3"></div>
+          <div class="project_textinside" >
+            <h6>Simple calculator</h6>
+            <h6>with min functions</h6>
+            <!-- ! add the other calc also  -->
+            <!-- !@note  i have to complete the   present calculator useing the toggle function -->
+          </div>
+        </div>
+        <div class="project_1">
+          <div class="project_img4"></div>
+          <div class="project_textinside">
+            <h6 class="h1_project_2">To be updated</h6>
 
-.skills {
-  display: flex;
+            <!-- ! @-> note : update about the pomofocus website -->
+            <h6 class="h1_project_3">Soon</h6>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  flex-direction: row;
-  gap: 1.6rem;
-}
+    <section class="contact_main gallery">
+      <div class="project_title contact_heading">
+        <h1>💻Contact<span style="color: #f9532d"> Section 📧 </span></h1>
+      </div>
+      <div class="outerbox_contactpage">
+        <div class="innerbox_contactpage">
+          <div class="conatct_blankline">
+            <div class="line_designs">
+              <div class="line_design"></div>
+              <div class="line_design"></div>
+              <div class="line_design"></div>
+            </div>
+            <div class="contact_main_content">
+              <div class="contact_left">
+                <div class="main_contact_heading">
+                  <h1>Contact Me</h1>
+                </div>
+                <div class="name contact_padding">
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    id="text_name"
+                  />
+                </div>
+                <div class="email contact_padding">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    id="text_name"
+                  />
+                </div>
+                <div class="message contact_padding">
+                  <input
+                    type="text" 
+                    placeholder="Enter your review or any suggestion or any bug or any changes which is required "
+                    id="text_name"
+                  />
+                </div>
+                <div class="submit_button">
+                  <input type="submit" value="Submit" />
+                </div>
+              </div>
+              <div class="contact_right">
+                <div class="contact_right_img"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.head {
-  margin: 50px 50px 50px 50px;
-}
+    <script src="index.js"></script>
 
-.points {
-  display: flex;
-  row-gap: 2rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-}
 
-.head p {
-  row-gap: 30px;
-  padding: 5px;
-  font-size: 1.05rem;
-  font-weight: 800;
-  letter-spacing: 0.7px;
-  border-radius: 36px;
-  line-height: 2;
-  transition: 0.3s;
-  opacity: 0;
-  animation: navani 0.3s ease forwards;
-}
-
-.points li {
-  padding: 5px;
-  font-size: 1.05rem;
-  font-weight: 900;
-  letter-spacing: 0.7px;
-  border-radius: 36px;
-  line-height: 2;
-  transition: 0.3s;
-  opacity: 0;
-  animation: navani 0.3s ease forwards;
-  animation-delay: calc(0.15s * var(--navAni));
-}
-
-.row1 {
-  margin: 30px 50px 30px 50px;
-}
-
-.row2 {
-  margin: 30px 50px 30px 50px;
-}
-
-.secondsocail {
-  display: flex;
-  height: 250px;
-  width: 400px;
-}
-
-.border:hover {
-  border: 15px solid #f9532d;
-}
-
-.images-n1 {
-  width: 100%;
-  margin-right: 0;
-  /* Remove unnecessary margin */
-}
-
-.detail2 {
-  margin-top: 20px;
-  flex: 1;
-  max-width: 100%;
-  margin-left: 30px;
-  /* Occupy full width on smaller screens */
-}
-
-/* ! -------------------- */
-.main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(277px, 1fr));
-  row-gap: 2rem;
-  align-items: center;
-}
-
-.main h3 {
-  font-size: 1.5rem;
-  opacity: 0;
-  animation: topSideAni 1s ease forwards;
-}
-
-.resume-inside h1 {
-  font-size: 3.35rem;
-  font-weight: 600;
-  opacity: 0;
-  animation: leftSideAni 1s ease forwards;
-  animation-delay: 0s;
-  animation-delay: 1s;
-}
-
-.detail2 h1 {
-  font-size: 3.35rem;
-  font-weight: 600;
-  opacity: 0;
-  animation: leftSideAni 1s ease forwards;
-  animation-delay: 1s;
-}
-
-.social2 {
-  display: flex;
-  flex-direction: row;
-
-  margin-bottom: 100px;
-  margin-top: 150px;
-  position: static;
-}
-.resume_left {
-  height: 900px;
-  width: 600px;
-
-  text-align: center;
-}
-.resume-inside h4 {
-  border: 15px solid #f9532d;
-  margin-top: 100px;
-}
-.resume_right {
-  margin-left: 100px;
-  /* box-shadow: 10px 10px 5px black inset; */
-  box-shadow: 100px 100px 100px 100px black inset;
-}
-.resume_pdf {
-  background-image: url(/imgs/resume.png);
-  background-size: cover;
-  width: 800px;
-  height: 900px;
-  filter: blur(3px);
-}
-.resume-inside {
-  margin-top: 200px;
-}
-
-.resume {
-  padding: 0;
-  margin-top: 250px;
-
-  font-size: 3.35rem;
-  font-weight: 600;
-  opacity: 0;
-  animation: leftSideAni 1s ease forwards;
-  animation-delay: 1s;
-  display: flex;
-  flex-direction: row;
-}
-
-/* .detail2{
-    position: relative;
+    <script>
+      const scratchCard = document.getElementById('scratch-card');
+      const canvas = scratchCard.querySelector('canvas');
+      const ctx = canvas.getContext('2d');
     
-} */
-.main h1 {
-  font-size: 4rem;
-  font-weight: 600;
-  opacity: 0;
-  animation: leftSideAni 1s ease forwards;
-  animation-delay: 1s;
-}
-
-.main p {
-  line-height: 1.7;
-  font-size: 1.15rem;
-  opacity: 0;
-  animation: topSideAni 1.5s ease forwards;
-}
-
-.detail2 {
-  line-height: 1.7;
-  font-size: 1.15rem;
-  opacity: 0;
-  animation: topSideAni 1.5s ease forwards;
-}
-
-.content p {
-  line-height: 1.7;
-  font-size: 1.15rem;
-  opacity: 0;
-  animation: topSideAni 1.5s ease forwards;
-}
-.project_title {
-  text-align: center;
-  text-decoration: underline;
-  text-underline-offset: 10px;
-  text-decoration-thickness: 10px;
-}
-
-.detail2 P,
-h1 {
-  margin: 0;
-  padding: 0;
-}
-.projects {
-  padding: 0;
-  margin-top: 250px;
-
-  font-size: 3.35rem;
-  font-weight: 600;
-  opacity: 0;
-  animation: leftSideAni 1s ease forwards;
-  animation-delay: 1s;
-}
-
-/* .gallery {
-    padding: 0;
-    margin-top: 250px;
-
-    font-size: 3.35rem;
-    font-weight: 600;
-    opacity: 0;
-    animation: leftSideAni 1s ease forwards;
-    animation-delay: 1s;
-}
-.carocel_row1 {
-    height: 500px;
-    width: 250px;
-} */
-.social {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.4rem;
-  margin-top: 1.7rem;
-}
-.project_row1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  text-align: center;
-}
-.project_textinside {
-  margin-top: 0px;
-  padding-top: 0px;
-}
-.project_row2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  text-align: center;
-}
-.project_img {
-  background-image: url(/imgs/Untitled_design-removebg-preview.png);
-  background-size: cover;
-  height: 387px;
-  width: 500px;
-}
-.project_textinside:hover h6 {
-  color: #f9532d;
-}
-.project_img2 {
-  background-image: url(/imgs/p2_nobg.png);
-  background-size: cover;
-  height: 387px;
-  width: 500px;
-}
-.project_img1 {
-  background-image: url(/imgs/qpoint2_nobg.png);
-  background-size: cover;
-  height: 387px;
-  width: 500px;
-}
-.project_img2 {
-  background-image: url(/imgs/p2_nobg.png);
-  background-size: cover;
-  height: 387px;
-  width: 500px;
-}
-.project_img3 {
-  background-image: url(/imgs/p3_nobg.png);
-  background-size: cover;
-  height: 387px;
-  width: 500px;
-}
-.project_img4 {
-  background-image: url(/imgs/fina_nobg.png);
-  background-size: cover;
-  height: 387px;
-  width: 500px;
-}
-.project_1 {
-  height: 500px;
-  width: 500px;
-}
-
-.social a {
-  display: grid;
-  place-items: center;
-  text-decoration: none;
-  color: #244d61;
-  font-size: 1.5rem;
-  border: 1.6px solid #244d61;
-  border-radius: 50%;
-  padding: 0.39rem;
-  text-align: center;
-  opacity: 0;
-  animation: SocialAni 1s ease forwards;
-  animation-delay: calc(0.2s * var(--socialAni));
-}
-
-.social a:hover {
-  color: #fff;
-  background-color: #244d61;
-  box-shadow: 0 0 20px #244d61;
-  transition: all 0.3s ease-in-out;
-}
-
-.images img {
-  position: relative;
-}
-
-.images::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 495px;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  border-radius: 6px;
-}
-
-.images::before {
-  background: linear-gradient(145deg, #e2e8ec, #ffffff);
-  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;
-}
-
-.school {
-  margin-top: 45px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.school h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  opacity: 0;
-  animation: leftSideAni 1s ease forwards;
-  animation-delay: 1s;
-}
-
-.content h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  opacity: 0;
-  animation: leftSideAni 1s ease forwards;
-  animation-delay: 1s;
-}
-
-.collage h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  opacity: 0;
-  animation: leftSideAni 1s ease forwards;
-  animation-delay: 1s;
-}
-
-.primary {
-  margin-right: 40px;
-}
-
-.collage {
-  margin-top: 30px;
-}
-
-.images {
-  width: 80%;
-  margin-left: auto;
-  position: relative;
-  z-index: -1;
-}
-
-.linkes h3,
-a {
-  color: var(--primary-dark);
-  line-height: 1.7;
-  font-size: 1.15rem;
-  opacity: 0;
-  animation: topSideAni 1.5s ease forwards;
-}
-
-.images-n1 {
-  margin-top: 100px;
-  width: 40%;
-
-  margin-left: 150px;
-  bottom: 65px;
-}
-
-.images-n1 img {
-  margin-left: 50px;
-}
-
-.images {
-  opacity: 0;
-  animation: imageAni 1s ease forwards;
-  animation-delay: 1.5s;
-}
-
-/* Section 1 End */
-
-/* Dark Mode */
-
-.dark-mode {
-  background-color: var(--primary-dark);
-  color: #ffffff;
-}
-
-.mode input {
-  display: none;
-}
-
-.container3 {
-  padding: 0;
-  margin-top: 250px;
-}
-
-.skills {
-  display: flex;
-  flex-direction: row;
-  gap: 1.6rem;
-}
-
-:is(.dark-mode) {
-  .linkes h3 {
-    color: white;
-  }
-
-  .social a {
-    color: var(--primary-color);
-    border: 1.6px solid var(--primary-color);
-  }
-
-  .social a:hover {
-    color: var(--primary-dark);
-    background-color: var(--primary-color);
-    box-shadow: 0 0 20px var(--primary-color);
-  }
-
-  .logo a {
-    color: #fff;
-  }
-
-  .images::before {
-    background: linear-gradient(145deg, #1f252e, #2e3239);
-    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #1b1f27;
-  }
-}
-
-.dark-mode header {
-  box-shadow: 0 4px 17px rgb(80 80 80 / 31%);
-  background: var(--primary-dark);
-}
-
-/* Animation */
-@keyframes leftSideAni {
-  0% {
-    transform: translateX(-100px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes navani {
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes rightSideAni {
-  0% {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes topSideAni {
-  0% {
-    transform: translateY(-100px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes SocialAni {
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* @keyframes ImgAni {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(-9px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-} */
-@keyframes imageAni {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .container {
-    padding: 0 4.4rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 0 1.6rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  header {
-    height: auto;
-  }
-
-  .images-n1 img {
-    margin: 0;
-  }
-
-  ul {
-    background: #fff;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    top: 3.4rem;
-    left: -100%;
-    z-index: 111111;
-  }
-
-  .menu {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #244d61;
-  }
-
-  #click:checked ~ ul {
-    left: 0%;
-    transition: all 0.3s ease;
-  }
-
-  .dark-mode .menu {
-    color: var(--primary-color);
-  }
-
-  .dark-mode ul {
-    background: var(--primary-dark);
-  }
-
-  .mode {
-    position: absolute;
-    right: 4rem;
-  }
-
-  .images {
-    width: 100%;
-    margin: auto;
-  }
-
-  .main {
-    margin-top: 2rem;
-  }
-}
-
-/* ai generated works */
-/* Add this at the end of your existing CSS */
-
-/* Responsive Styles */
-
-/* Section 1 */
-.detail2 {
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.left {
-  background-color: white;
-}
-
-.images-n1 {
-  width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.images-n2 {
-  position: absolute;
-  right: 149px;
-  top: 150px;
-}
-
-.contact_main {
-  padding: 0;
-  margin-top: 250px;
-  /* margin-bottom: 50px; */
-  font-size: 3.35rem;
-  font-weight: 600;
-  opacity: 0;
-  animation: leftSideAni 1s ease forwards;
-  animation-delay: 1s;
-}
-
-@media screen and (max-width: 1024px) {
-  .container {
-    padding: 0 4.4rem;
-  }
-}
-
-/* Responsive styles for tablets */
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 0 1.6rem;
-  }
-
-  .images-n1 img {
-    margin: 0;
-  }
-
-  /* Adjust styles for screens up to 768px width */
-  .container {
-    padding: 0 1.6rem;
-  }
-
-  .main h1 {
-    font-size: 3rem;
-  }
-
-  .detail2 h1 {
-    font-size: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  /* *{
-    background-color: red;
-    color: yellow;
-  } */
-
-  .images-n1 img {
-    margin: 0;
-  }
-
-  .container {
-    padding: 0 1rem;
-  }
-
-  header {
-    padding: 1rem 0.5rem;
-  }
-
-  .logo {
-    font-size: 1rem;
-  }
-
-  .main heading-socail {
-    font-size: 2.5rem;
-  }
-
-  .detail2 h1 {
-    font-size: 2rem;
-  }
-
-  .images-n1 {
-    margin-left: 0;
-    height: auto;
-  }
-
-  .images img {
-    width: 100%;
-  }
-
-  .detail2 p {
-    display: block;
-  }
-  .images-n1 img {
-    margin: 0;
-  }
-
-  .aboutme {
-    flex-direction: column;
-    /* Stack items vertically on small screens */
-  }
-
-  .images-n1 {
-    height: auto;
-    /* Adjust height to auto for small screens */
-    max-width: 100%;
-    /* Make images-n1 responsive to width */
-  }
-
-  .img-sec {
-    margin-top: 20px;
-    /* Add margin for better spacing */
-  }
-}
-
-/* 
-inserted from chatgpt */
-.resume_left {
-  height: 900px;
-  width: 600px;
-  text-align: center;
-}
-
-.resume-inside h4 {
-  border: 15px solid #f9532d;
-  margin-top: 100px;
-}
-
-.resume_right {
-  margin-left: 100px;
-  box-shadow: 100px 100px 100px 100px black inset;
-}
-
-.resume_pdf {
-  background-image: url(/imgs/resume.png);
-  background-size: cover;
-  width: 800px;
-  height: 900px;
-  filter: blur(3px);
-}
-
-.resume-inside {
-  margin-top: 200px;
-}
-
-.resume {
-  padding: 0;
-  margin-top: 250px;
-  font-size: 3.35rem;
-  font-weight: 600;
-  opacity: 0;
-  animation: leftSideAni 1s ease forwards;
-  animation-delay: 1s;
-  display: flex;
-  flex-direction: row;
-}
-
-.projects {
-  padding: 0;
-  margin-top: 250px;
-  font-size: 3.35rem;
-  font-weight: 600;
-  opacity: 0;
-  animation: leftSideAni 1s ease forwards;
-  animation-delay: 1s;
-}
-
-.project_row1,
-.project_row2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  text-align: center;
-}
-
-.project_textinside {
-  margin-top: 0px;
-  padding-top: 0px;
-}
-
-/* !.project_img1 {
-  background-image: url(/imgs/p4_nobg.png);
-  background-size: cover;
-  height: 387px;
-  width: 500px;
-} */
-
-.project_img2 {
-  background-image: url(/imgs/p2_nobg.png);
-  background-size: cover;
-  height: 387px;
-  width: 500px;
-}
-
-.project_img3 {
-  background-image: url(/imgs/calc2_nobg.png);
-  background-size: cover;
-  height: 387px;
-  width: 500px;
-}
-
-.project_img4 {
-  background-image: url(/imgs/fina_nobg.png);
-  background-size: cover;
-  height: 387px;
-  width: 500px;
-}
-
-.project_1 {
-  height: 500px;
-  width: 500px;
-}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  .project_row1,
-  .project_row2 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .project_img2 {
-    background-image: url(/imgs/p2_nobg.png);
-    background-size: cover;
-    height: 387px;
-    width: 385px;
-  }
-
-  .project_img2 {
-    background-image: url(/imgs/p2_nobg.png);
-    background-size: cover;
-    height: 387px;
-    width: 385px;
-  }
-  .project_img3 {
-    background-image: url(/imgs/calc2_nobg.png);
-    background-size: cover;
-    height: 387px;
-    width: 385px;
-  }
-  .project_img4 {
-    background-image: url(/imgs/fina_nobg.png);
-    background-size: cover;
-    height: 387px;
-    width: 385px;
-  }
-  .project_img {
-    background-image: url(/imgs/Untitled_design-removebg-preview.png);
-    background-size: cover;
-    height: 387px;
-    width: 385px;
-  }
-  .project_img1 {
-    background-image: url(/imgs/qpoint2_nobg.png);
-    background-size: cover;
-    height: 387px;
-    width: 385px;
-  }
-
-  .project_img2 {
-    height: 387px;
-    width: 385px;
-  }
-  .project_textinside {
-    padding-left: 19px;
-  }
-  .project_textinside h6 {
-    text-align: start;
-    font-size: 39px;
-  }
-  .h1_project_1 {
-    margin-left: 31px;
-  }
-  .h1_project_2 {
-    margin-left: 31px;
-  }
-  .h1_project_3 {
-    margin-left: 97px;
-  }
-
-  .social2 {
-    display: flex;
-    flex-direction: row;
-
-    margin-bottom: 0px;
-    margin-top: 81px;
-    position: static;
-  }
-  .heading-socail h2 {
-    font-size: 30px;
-  }
-  .heading-socail {
-    padding-left: 0px;
-  }
-  /* .points li {
-    padding: 0.3rem 1rem;
-
-    font-size: 1.05rem;
-    font-weight: 600;
-    letter-spacing: 0.7px;
-    border-radius: 36px;
-
-    transition: 0.3s;
-    opacity: 0;
-    animation: navani 0.3s ease forwards;
-    animation-delay: calc(0.15s * var(--navAni));
-  } */
-
-  .resume {
-    padding: 0;
-    margin-top: 152px;
-    font-size: 3.35rem;
-    font-weight: 600;
-    opacity: 0;
-    animation: leftSideAni 1s ease forwards;
-    animation-delay: 1s;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .resume-inside h1 {
-    font-size: 3.35rem;
-    font-weight: 600;
-    opacity: 0;
-    animation: leftSideAni 1s ease forwards;
-    animation-delay: 0s;
-    animation-delay: 1s;
-  }
-  .resume_left {
-    height: 587px;
-    width: 600px;
-
-    text-align: start;
-  }
-  .images-n1 img {
-    width: 362px;
-  }
-  .resume-text {
-    margin-left: 52px;
-  }
-  .resume-text h1 {
-    font-size: 4rem;
-  }
-  .resume-inside h1 {
-    font-size: 2.35rem;
-    margin-left: 16px;
-  }
-  .resume-inside {
-    margin-top: 112px;
-    margin-left: 18px;
-  }
-  .resume-inside h4 {
-    font-size: 50px;
-  }
-  .skills {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-  }
-  .resume-inside h4 {
-    font-size: 38px;
-  }
-  .resume_left_border {
-    width: 386px;
-  }
-  .resume_pdf {
-    width: 431px;
-    height: 629px;
-  }
-  .resume_right {
-    margin-left: 0px;
-    margin-right: 0px;
-    box-shadow: 100px 100px 100px 100px black inset;
-  }
-  .project_title h1 {
-    font-size: 3.7rem;
-  }
-
-  /* starting with the last page that is conatct page with reposiveness */
-  .outerbox_contactpage {
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-  }
-  .innerbox_contactpage {
-    position: absolute;
-
-    top: 24%;
-    right: 8%;
-    width: 700px;
-    height: 626px;
-    background-color: white;
-    border: 5px solid var(--primary-color);
-  }
-
-  .contact_main_content {
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    height: 100%;
-
-    margin-top: 31px;
-  }
-}
-
-/* !@almost done with the dimentions just have to complete the rest part */
-
-.contact_heading h1 {
-  margin-bottom: 58px;
-}
-.innerbox_contactpage {
-  position: absolute;
-
-  top: 24%;
-  right: 8%;
-  width: 1168px;
-  height: 626px;
-  background-color: white;
-  border: 5px solid var(--primary-color);
-}
-.outerbox_contactpage {
-  width: 97%;
-  margin-left: 20px;
-  margin-right: 20px;
-  border: 5px solid white;
-
-  height: 900px;
-  background-color: transparent;
-}
-.conatct_blankline {
-  height: 52px;
-  /* margin: 2px 2px 2px 2px; */
-  width: 100%;
-  background-color: var(--primary-color);
-}
-.line_designs {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  width: 100%;
-  padding-top: 18px;
-  padding-right: 30px;
-}
-.line_design {
-  height: 12px;
-  width: 88px;
-  margin-right: 69px;
-  background-color: white;
-  border-radius: 11px;
-}
-
-.contact_main_content {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  height: 100%;
-
-  margin-top: 31px;
-}
-
-.contact_left {
-  width: 656px;
-  /* width:452px; */
-  height: 549px;
-  background-color: rgb(119, 119, 207);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.contact_right {
-  background-color: white;
-  width: 456px;
-  height: 496px;
-}
-.contact_padding {
-  padding-left: 50px;
-  margin-top: 13px;
-}
-.main_contact_heading {
-  width: 100%;
-  height: 100px;
-
-  text-align: center;
-}
-.main_contact_heading h1 {
-  letter-spacing: 10px;
-  color: var(--primary-dark);
-  text-shadow: 3px 3px 11px #fff;
-}
-/* ! ai copied */
-.name {
-  display: flex;
-  align-items: center;
-}
-
-.name input {
-  padding: 20px 240px 20px 45px; /* Add 
-  extra padding to the left to make space for the icon */
-  font-size: 16px;
-  border-radius: 15px;
-  border: 5px solid #1f252e;
-  background-image: url("user.png"); /* Path to your icon image */
-  background-position: 15px center; /* Position the icon at the center of the left side */
-  background-size: 24px 24px; /* Size of the icon */
-  background-repeat: no-repeat; /* Ensure the icon does not repeat */
-  background-color: white; /* Background color of the input field */
-}
-.email {
-  display: flex;
-  align-items: center;
-}
-
-.email input {
-  padding: 20px 240px 20px 45px; /* Add extra padding to the left to make space for the icon */
-  font-size: 16px;
-  border-radius: 15px;
-  border: 5px solid #1f252e;
-  background-image: url("email.png"); /* Path to your icon image */
-  background-position: 15px center; /* Position the icon at the center of the left side */
-  background-size: 24px 24px; /* Size of the icon */
-  background-repeat: no-repeat; /* Ensure the icon does not repeat */
-  background-color: white; /* Background color of the input field */
-}
-.message {
-  display: flex;
-
-  align-items: center;
-  text-wrap: balance;
-}
-
-.message input {
-  width: 437px;
-  padding-top: 22px;
-  padding-bottom: 116px;
-  padding-left: 60px;
-  /* !  @221px 112px 59px; */ /* Add extra padding to the left to make space for the icon */
-  font-size: 16px;
-  border-radius: 15px;
-  border: 5px solid #1f252e;
-  background-image: url("message.png"); /*  !Path to your icon image */
-  background-position: 14px 25px; /* ! Position the icon at the center of the left side */
-  background-size: 24px 24px; /*! @Size of the icon! */
-  background-repeat: no-repeat; /*!!! Ensure the icon does not repeat */
-  background-color: white; /*! Background color of the input field */
-}
-
-.contact_right_img {
-  background-image: url(/vecteezy_man-customer-service-with-contact-information_7920397.jpg);
-  background-size: cover;
-  height: 494px;
-  width: 465px;
-}
-.submit_button input {
-  padding: 15px 62px 13px 44px;
-  font-weight: 700;
-  color: white;
-  background-color: var(--primary-dark);
-  font-size: 17px;
-  border-radius: 23px;
-  margin-top: 0px;
-  margin-left: 50px;
-  margin-bottom: 6px;
-}
-
-/* scratch card one  */
-
-.scratch-section {
-  animation: topSideAni 1.5s ease forwards;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-}
-
-#scratch-card {
-  animation: topSideAni 1.5s ease forwards;
-  position: relative;
-  width: 500px;
-  height: 500px;
-  aspect-ratio: square;
-  border: 2px solid #ecf0f1;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  background-color: #ecf0f1;
-  overflow: hidden;
-  border-radius: 15px;
-  left: 120px;
-  top: 17px;
-}
-
-#scratch-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-#scratch-card canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-@media only screen and (max-width: 768px) {
-  .scratch-section {
-    animation: topSideAni 1.5s ease forwards;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-  }
-
-  #scratch-card {
-    animation: topSideAni 1.5s ease forwards;
-    position: relative;
-    width: 350px;
-    height: 350px;
-    aspect-ratio: square;
-    border: 2px solid #ecf0f1;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    background-color: #ecf0f1;
-    overflow: hidden;
-    border-radius: 15px;
-    left: 0px;
-    top: 0px;
-
-  }
-  
-
-  #scratch-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  #scratch-card canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-}
+      canvas.width = scratchCard.offsetWidth;
+      canvas.height = scratchCard.offsetHeight;
+    
+      // Fill the canvas with a gradient similar to Google Pay scratch color
+      const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+      gradient.addColorStop(0, '#F5EFE7'); // Soft Pink
+gradient.addColorStop(1, '#3E5879'); // Peach
+// Dark Orange
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+      // Draw the text
+      ctx.fillStyle = '#fff';
+      ctx.font = '28px Arial';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('Scratch Here!', canvas.width / 2, canvas.height / 2);
+    
+      let isDrawing = false;
+      let isMouseDown = false;
+    
+      function getMousePos(e) {
+        const rect = canvas.getBoundingClientRect();
+        return {
+          x: (e.clientX - rect.left) / (rect.right - rect.left) * canvas.width,
+          y: (e.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height,
+        };
+      }
+    
+      function getTouchPos(e) {
+        const rect = canvas.getBoundingClientRect();
+        const touch = e.touches[0];
+        return {
+          x: (touch.clientX - rect.left) / (rect.right - rect.left) * canvas.width,
+          y: (touch.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height,
+        };
+      }
+    
+      canvas.addEventListener('mousedown', function (e) {
+        isDrawing = true;
+        isMouseDown = true;
+        const pos = getMousePos(e);
+        scratch(pos.x, pos.y);
+      });
+    
+      canvas.addEventListener('mousemove', function (e) {
+        if (isDrawing && isMouseDown) {
+          const pos = getMousePos(e);
+          scratch(pos.x, pos.y);
+        }
+      });
+    
+      canvas.addEventListener('mouseup', function () {
+        isDrawing = false;
+        isMouseDown = false;
+      });
+    
+      canvas.addEventListener('mouseleave', function () {
+        isDrawing = false;
+      });
+    
+      canvas.addEventListener('touchstart', function (e) {
+        e.preventDefault();
+        isDrawing = true;
+        const pos = getTouchPos(e);
+        scratch(pos.x, pos.y);
+      });
+    
+      canvas.addEventListener('touchmove', function (e) {
+        e.preventDefault();
+        if (isDrawing) {
+          const pos = getTouchPos(e);
+          scratch(pos.x, pos.y);
+        }
+      });
+    
+      canvas.addEventListener('touchend', function (e) {
+        e.preventDefault();
+        isDrawing = false;
+      });
+    
+      function scratch(x, y) {
+        ctx.globalCompositeOperation = 'destination-out';
+        ctx.beginPath();
+        ctx.arc(x, y, 40, 0, 2 * Math.PI);
+        ctx.fill();
+      }
+    </script>
+  </body>
+</html>

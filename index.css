@@ -1406,16 +1406,17 @@ inserted from chatgpt */
   #scratch-card {
     animation: topSideAni 1.5s ease forwards;
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     aspect-ratio: square;
     border: 2px solid #ecf0f1;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     background-color: #ecf0f1;
     overflow: hidden;
     border-radius: 15px;
-    left: 19px;
+    left: 0px;
     top: 0px;
+
   }
   
 
